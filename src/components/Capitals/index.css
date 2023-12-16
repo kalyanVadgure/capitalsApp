@@ -17,8 +17,21 @@
   padding-left: 30px;
   height: 300px;
   width: 500px;
+  border-radius: 20px;
+  color: #1e293b;
 }
 
 .select_container {
   display: flex;
+  align-items: center;
+}
+
+.select_options {
+  width: 50%;
+  height: 40px;
+  display: block;
+}
+
+.is_capital_para {
+  margin-left: 10px;
 }

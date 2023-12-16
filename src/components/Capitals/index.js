@@ -51,13 +51,17 @@ class Capitals extends Component {
       <div className="main_container">
         <div className="capital_country_container">
           <h1>Countries And Capitals</h1>
-          <div className="select_container" onChange={this.onChangeCapital}>
-            <select>
+          <div className="select_container">
+            <select onChange={this.onChangeCapital} className="select_options">
               {countryAndCapitalsList.map(eachCountry => (
-                <Option countryDetails={eachCountry} key={eachCountry.id} />
+                <Option
+                  countryDetails={eachCountry}
+                  key={eachCountry.id}
+                  value={country.id}
+                />
               ))}
             </select>
-            <p>is capital of which country</p>
+            <p className="is_capital_para">is capital of which country</p>
           </div>
           <h1>{country}</h1>
         </div>
